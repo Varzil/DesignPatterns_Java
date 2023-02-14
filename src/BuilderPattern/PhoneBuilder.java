@@ -1,4 +1,8 @@
 package BuilderPattern;
+
+// In Builder DP we use Setters
+// These setters set the values of the different parameters
+
 public class PhoneBuilder{
     String os;
     String processor;
