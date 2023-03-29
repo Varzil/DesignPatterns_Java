@@ -2,7 +2,7 @@ package FlyWeight;
 
 public class Terrorist implements IPlayer{
     // Intrinsic property
-    private String task;
+    private final String task;
 
     // Extrinsic property
     private String weapon;
