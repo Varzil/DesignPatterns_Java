@@ -3,10 +3,10 @@ package FlyWeight_2;
 import java.util.HashMap;
 
 public class ShapeFactory {
-    private static final HashMap circleMap = new HashMap();
+    private static final HashMap<String, Circle> circleMap = new HashMap<String, Circle>();
 
     public static Shape getCircle(String color) {
-        Circle circle = (Circle)circleMap.get(color);
+        Circle circle = circleMap.get(color);
 
         if(circle == null) {
             circle = new Circle(color);

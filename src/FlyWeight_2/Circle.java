@@ -1,7 +1,7 @@
 package FlyWeight_2;
 
 public class Circle implements Shape {
-    private String color;
+    private final String color;
     private int x;
     private int y;
     private int radius;
@@ -24,6 +24,6 @@ public class Circle implements Shape {
 
     @Override
     public void draw() {
-        System.out.println("Circle: Draw() [Color : " + color + ", x : " + x + ", y :" + y + ", radius :" + radius);
+        System.out.println("Drawing Circle [Color : " + color + ", x : " + x + ", y :" + y + ", radius :" + radius);
     }
 }
