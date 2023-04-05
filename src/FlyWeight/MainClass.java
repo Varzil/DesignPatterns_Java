@@ -12,6 +12,9 @@ public class MainClass {
                 counterTerrorist.assignWeapon("Counter terrorist Weapon " + String.valueOf(i));
                 System.out.println(counterTerrorist);
             }
+            IPlayer hero=PlayerFactory.getHeroPlayer();
+            hero.assignWeapon("Hero's Weapon "+String.valueOf(i));
+            System.out.println(hero);
         }
     }
 }
